@@ -6,8 +6,54 @@
 	},
 	"item": [
 		{
+			"name": "Cria Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"leo@login\",\r\n    \"senha\": \"123\",\r\n    \"admin\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/usuarios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Pesquisa Clientes",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -30,6 +76,21 @@
 		{
 			"name": "Pesquisa Empresas",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -51,6 +112,21 @@
 		{
 			"name": "Pesquisa Funcionarios",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -72,6 +148,21 @@
 		{
 			"name": "Pesquisa Passagens",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -93,6 +184,21 @@
 		{
 			"name": "Pesquisa Destinos",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -117,6 +223,21 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"body": {
@@ -147,6 +268,21 @@
 		{
 			"name": "Pesquisa Cliente",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "user@login",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -169,6 +305,21 @@
 		{
 			"name": "Pesquisa Empresa",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -191,6 +342,21 @@
 		{
 			"name": "Pesquisa Funcionario",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -213,6 +379,21 @@
 		{
 			"name": "Pesquisa Pacote",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -235,6 +416,21 @@
 		{
 			"name": "Pesquisa Destino",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -257,6 +453,21 @@
 		{
 			"name": "Pesquisa Passagem",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -279,6 +490,21 @@
 		{
 			"name": "Pesquisa Cliente/Pacotes",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -302,6 +528,21 @@
 		{
 			"name": "Pesquisa Empresa/Destinos",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -325,6 +566,21 @@
 		{
 			"name": "Pesquisa Empresa/Passagens",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -348,6 +604,21 @@
 		{
 			"name": "Pesquisa Funcionario/Pacotes",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -371,6 +642,21 @@
 		{
 			"name": "Pesquisa Pacote/Destinos",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -394,6 +680,21 @@
 		{
 			"name": "Pesquisa Pacote/Passagens",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -417,6 +718,21 @@
 		{
 			"name": "Criar Destino",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -447,11 +763,26 @@
 		{
 			"name": "Criar Cliente",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Joana\",\r\n    \"cpf\": \"27390527668\",\r\n    \"telefone\": \"3213\",\r\n    \"email\": \"abc@hot.com\",\r\n    \"enderecoLogradouro\": \"Rua ABC\",\r\n    \"enderecoNumero\": \"10\",\r\n    \"enderecoUf\": \"MG\",\r\n    \"enderecoCidade\": \"Jf\",\r\n    \"enderecoCep\": \"36090-000\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Moana\",\r\n    \"cpf\": \"27390527668\",\r\n    \"telefone\": \"3213\",\r\n    \"email\": \"abc@hot.com\",\r\n    \"enderecoLogradouro\": \"Rua ABC\",\r\n    \"enderecoNumero\": \"10\",\r\n    \"enderecoUf\": \"MG\",\r\n    \"enderecoCidade\": \"Jf\",\r\n    \"enderecoCep\": \"36090-000\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -529,6 +860,21 @@
 		{
 			"name": "Criar Empresa",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -559,6 +905,21 @@
 		{
 			"name": "Criar Funcionário",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -589,6 +950,21 @@
 		{
 			"name": "Criar Pacote",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -619,6 +995,21 @@
 		{
 			"name": "Criar Passagem",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -649,6 +1040,21 @@
 		{
 			"name": "Atualizar Destino",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -702,6 +1108,21 @@
 		{
 			"name": "Atualizar Cliente",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -785,6 +1206,21 @@
 		{
 			"name": "Atualizar Empresa",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -873,6 +1309,21 @@
 		{
 			"name": "Atualizar Funcionario",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -961,6 +1412,21 @@
 		{
 			"name": "Atualizar Pacote",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -1014,6 +1480,9 @@
 		{
 			"name": "Atualizar Passagem",
 			"request": {
+				"auth": {
+					"type": "basic"
+				},
 				"method": "PUT",
 				"header": [],
 				"body": {
@@ -1026,7 +1495,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/v1/passagens/1?idEmpresa=1",
+					"raw": "http://localhost:8080/api/v1/passagens/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1066,7 +1535,8 @@
 						},
 						{
 							"key": "idEmpresa",
-							"value": "1"
+							"value": "1",
+							"disabled": true
 						}
 					]
 				}
@@ -1076,6 +1546,21 @@
 		{
 			"name": "Deletar Cliente",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
@@ -1096,34 +1581,27 @@
 			"response": []
 		},
 		{
-			"name": "Deletar Empresa",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/empresas/5",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"empresas",
-						"5"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Deletar Destino",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/v1/destinos/5",
+					"raw": "http://localhost:8080/api/v1/destinos/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1133,7 +1611,7 @@
 						"api",
 						"v1",
 						"destinos",
-						"5"
+						"1"
 					]
 				}
 			},
@@ -1142,10 +1620,25 @@
 		{
 			"name": "Deletar Funcionario",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/v1/funcionarios/5",
+					"raw": "http://localhost:8080/api/v1/funcionarios/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1155,7 +1648,7 @@
 						"api",
 						"v1",
 						"funcionarios",
-						"5"
+						"2"
 					]
 				}
 			},
@@ -1164,32 +1657,25 @@
 		{
 			"name": "Deletar Pacote",
 			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/passagens/5",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"passagens",
-						"5"
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
 					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Deletar Passagem",
-			"request": {
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/v1/pacotes/4",
+					"raw": "http://localhost:8080/api/v1/pacotes/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -1199,7 +1685,81 @@
 						"api",
 						"v1",
 						"pacotes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Passagem",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/passagens/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"passagens",
 						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Empresa",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "leo@login",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/empresas/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"empresas",
+						"2"
 					]
 				}
 			},

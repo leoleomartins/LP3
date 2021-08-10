@@ -21,7 +21,6 @@ public class PassagemService {
     public List<Passagem> getPassagens(){
         return repository.findAll();
     }
-
     public Optional<Passagem> getPassagemById(Long id){
         return repository.findById(id);
     }
@@ -44,18 +43,19 @@ public class PassagemService {
         repository.delete(passagem);
     }
 
-    private void validar(Passagem passagem) {
-        if(passagem.getDataIda() == null || passagem.getDataIda().trim().equals("")){
-            throw new RegraNegocioException("Data de Ida inválida");
-        }
+    public void validar(Passagem passagem) {
         if(passagem.getOrigem() == null || passagem.getOrigem().trim().equals("")){
             throw new RegraNegocioException("Origem inválida");
         }
         if(passagem.getDestino() == null || passagem.getDestino().trim().equals("")){
             throw new RegraNegocioException("Destino inválido");
         }
+        if(passagem.getDataIda() == null || passagem.getDataIda().trim().equals("")){
+            throw new RegraNegocioException("Nome inválido");
+        }
         if(LocalDate.parse(passagem.getDataVolta()).isBefore(LocalDate.parse(passagem.getDataIda()))){
             throw new RegraNegocioException("Data de volta deve ser posterior a data de ida");
         }
+
     }
 }
