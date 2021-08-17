@@ -5,6 +5,7 @@ import com.voluptaria.vlpt.dto.PacoteDTO;
 import com.voluptaria.vlpt.exception.RegraNegocioException;
 import com.voluptaria.vlpt.model.Cliente;
 import com.voluptaria.vlpt.service.ClienteService;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @CrossOrigin
+@ApiOperation("Controller de Cliente")
 @RestController
 @RequestMapping("/api/v1/clientes")
 @RequiredArgsConstructor
